@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+
+  .flex-container {
+    display: flex;
+    height: 100%;
+
+    .left-column {
+      width: 35.5%;
+      background: linear-gradient(180deg, $white 0%, $gray-3 100%);
+    }
+
+    .right-column {
+      width: 64.5%;
+      background: url("/home/romalds/github/magebit-mid-junior-test/img/image_summer.png");
+      background-size: cover;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+
+}

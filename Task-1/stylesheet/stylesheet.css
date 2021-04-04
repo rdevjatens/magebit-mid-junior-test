@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* Variables */
+/* Fonts */
+.header {
+  margin-top: 14%;
+  text-align: center;
+}
+.header .navigation {
+  margin: 0;
+  padding: 0;
+}
+.header .navigation li {
+  display: inline;
+  font-size: 1vw;
+  padding-right: 3%;
+  color: #6A707B;
+}
+.header .navigation img {
+  padding: 1%;
+  margin-left: 4%;
+  padding-top: 5%;
+}
+.header .navigation #logo-text {
+  padding-right: 15%;
+  color: #000000;
+}
+
+.subscription {
+  padding: 20%;
+  padding-top: 31%;
+  padding-bottom: 0;
+}
+.subscription h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.85vw;
+}
+.subscription p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  color: #6A707B;
+}
+
+.email-input {
+  position: relative;
+  width: 97%;
+  margin-left: 15%;
+  margin-top: 6%;
+  height: 6%;
+  z-index: 998;
+  zoom: 1.5;
+  border: 0;
+  border-left: 0.3vw solid #4066A5;
+  padding-left: 1.8vw;
+  font-size: 0.6vw;
+}
+
+.terms-of-service {
+  margin-top: 7%;
+  margin-left: 21.5%;
+}
+
+input[type=checkbox i] {
+  width: 1.5vw;
+  height: 1.5vw;
+  -moz-appearance: none;
+}
+
+label {
+  padding-left: 2%;
+  font-family: Arial;
+  color: #6A707B;
+  font-size: 0.9vw;
+}
+label span {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.icon-ic_arrow:before {
+  position: relative;
+  z-index: 999;
+  margin-left: 105%;
+}
+
+.icon-ic_arrow {
+  position: absolute;
+  top: 29.2vw;
+  left: 34.6vw;
+  color: #E3E3E4;
+  font-size: 1vw;
+}
+
+.icon-ic-pineapple:before {
+  font-size: 2vw;
+  padding-right: 2%;
+  margin-left: 4%;
+}
+
+.icon-ic-youtube:before {
+  border: 1px solid #6A707B;
+  border-radius: 50%;
+}
+
+.icon-ic_twitter:before {
+  border: 1px solid #6A707B;
+  border-radius: 50%;
+}
+
+.icon-ic-instagram:before {
+  border: 1px solid #6A707B;
+  border-radius: 50%;
+}
+
+.icon-ic_facebook:before {
+  border: 3px solid #6A707B;
+  border-radius: 50%;
+  padding: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+body .flex-container {
+  display: flex;
+  height: 100%;
+}
+body .flex-container .left-column {
+  width: 35.5%;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+body .flex-container .right-column {
+  width: 64.5%;
+  background: url("/home/romalds/github/magebit-mid-junior-test/img/image_summer.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../../img/fonts/icomoon.eot?yt85mq");
+  src: url("../../img/fonts/icomoon.eot?yt85mq#iefix") format("embedded-opentype"), url("../../img/fonts/icomoon.ttf?yt85mq") format("truetype"), url("../../img/fonts/icomoon.woff?yt85mq") format("woff"), url("../../img/fonts/icomoon.svg?yt85mq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_arrow:before {
+  content: "";
+}
+
+.icon-ic-youtube:before {
+  content: "";
+}
+
+.icon-ic_twitter:before {
+  content: "";
+}
+
+.icon-ic-instagram:before {
+  content: "";
+}
+
+.icon-ic-pineapple:before {
+  content: "";
+  color: #4066A5;
+}
+
+.icon-ic_facebook:before {
+  content: "";
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
