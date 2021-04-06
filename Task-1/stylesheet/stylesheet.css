@@ -1,142 +1,118 @@
 @charset "UTF-8";
 /* Variables */
 /* Fonts */
+/* screen size */
+/* mixins */
+/* screen sizes */
 .header {
-  margin-top: 14%;
-  text-align: center;
+  position: relative;
+  top: 4.9vw;
+  left: 0.5vw;
 }
-.header .navigation {
+@media only screen and (max-width: 375px) {
+  .header {
+    top: 1vw;
+    left: 0;
+  }
+}
+
+.navigation {
   margin: 0;
   padding: 0;
-}
-.header .navigation li {
-  display: inline;
-  font-size: 1vw;
-  padding-right: 3%;
-  color: #6A707B;
-}
-.header .navigation img {
-  padding: 1%;
-  margin-left: 4%;
-  padding-top: 5%;
-}
-.header .navigation #logo-text {
-  padding-right: 15%;
-  color: #000000;
-}
-
-.subscription {
-  padding: 20%;
-  padding-top: 31%;
-  padding-bottom: 0;
-}
-.subscription h1 {
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.85vw;
-}
-.subscription p {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.9vw;
-  color: #6A707B;
-}
-
-.email-input {
-  position: relative;
-  width: 97%;
-  margin-left: 15%;
-  margin-top: 6%;
-  height: 6%;
-  z-index: 998;
-  zoom: 1.5;
-  border: 0;
-  border-left: 0.3vw solid #4066A5;
-  padding-left: 1.8vw;
-  font-size: 0.6vw;
-}
-
-.terms-of-service {
-  margin-top: 7%;
-  margin-left: 21.5%;
-}
-
-input[type=checkbox i] {
-  width: 1.5vw;
-  height: 1.5vw;
-  -moz-appearance: none;
-}
-
-label {
-  padding-left: 2%;
-  font-family: Arial;
-  color: #6A707B;
-  font-size: 0.9vw;
-}
-label span {
-  text-decoration: underline;
-  color: #000000;
-}
-
-.icon-ic_arrow:before {
-  position: relative;
-  z-index: 999;
-  margin-left: 105%;
-}
-
-.icon-ic_arrow {
-  position: absolute;
-  top: 29.2vw;
-  left: 34.6vw;
-  color: #E3E3E4;
-  font-size: 1vw;
-}
-
-.icon-ic-pineapple:before {
-  font-size: 2vw;
-  padding-right: 2%;
-  margin-left: 4%;
-}
-
-.icon-ic-youtube:before {
-  border: 1px solid #6A707B;
-  border-radius: 50%;
-}
-
-.icon-ic_twitter:before {
-  border: 1px solid #6A707B;
-  border-radius: 50%;
-}
-
-.icon-ic-instagram:before {
-  border: 1px solid #6A707B;
-  border-radius: 50%;
-}
-
-.icon-ic_facebook:before {
-  border: 3px solid #6A707B;
-  border-radius: 50%;
-  padding: 1%;
-  padding-right: 2%;
-  padding-left: 2%;
-}
-
-.social-icons {
   text-align: center;
+}
+@media only screen and (max-width: 375px) {
+  .navigation {
+    text-align: right;
+  }
+}
+.navigation li {
+  display: inline-block;
+  font-size: 0.9vw;
+  margin-right: 1vw;
+  color: #6A707B;
+  font-family: Arial;
+}
+@media only screen and (max-width: 375px) {
+  .navigation li {
+    font-size: 3.8vw;
+    margin-right: 5vw;
+  }
+  .navigation li:last-child {
+    margin-right: 2vw;
+  }
+}
+.navigation #logo {
+  margin-right: 5vw;
+}
+.navigation .logo-text {
+  color: #000000;
+}
+@media only screen and (max-width: 375px) {
+  .navigation .logo-text {
+    display: none;
+  }
+}
+.navigation .icon-ic-pineapple {
+  position: relative;
+  top: 0.3vw;
+  margin-right: 0.5vw;
+  font-size: 2.2vw;
+}
+@media only screen and (max-width: 375px) {
+  .navigation .icon-ic-pineapple {
+    top: 2.2vw;
+    left: -21vw;
+    font-size: 10vw;
+  }
+}
+
+.newsletter {
+  position: relative;
+  top: 16.2vw;
+  left: 20%;
+}
+
+.subscription-text-container {
+  width: 60%;
+}
+.subscription-text-container h1 {
+  font-family: Georgia;
+  font-weight: 400;
+  letter-spacing: 0.08vw;
+  padding-bottom: 0.2vw;
+}
+.subscription-text-container p {
+  color: #6A707B;
+  font-family: Arial;
+  line-height: 1.2vw;
+}
+
+.email-container input {
+  width: 110%;
 }
 
 body {
   margin: 0;
+  padding: 0;
 }
 body .flex-container {
   display: flex;
   height: 100%;
 }
+@media only screen and (max-width: 375px) {
+  body .flex-container {
+    display: block;
+  }
+}
 body .flex-container .left-column {
   width: 35.5%;
   background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+@media only screen and (max-width: 375px) {
+  body .flex-container .left-column {
+    width: 100%;
+  }
 }
 body .flex-container .right-column {
   width: 64.5%;

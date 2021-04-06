@@ -1,131 +1,90 @@
 .header {
-  margin-top: 14%;
+  position: relative;
+  top: 4.9vw;
+  left: 0.5vw;
+
+  @include screen-mobile {
+    top: 1vw;
+    left: 0;
+  }
+}
+
+.navigation {
+  @include remove-space;
   text-align: center;
 
-  .navigation {
-    margin: 0;
-    padding: 0;
+  @include screen-mobile {
+    text-align: right;
+  }
 
-    li {
-      display: inline;
-      font-size: $font-1vw;
-      padding-right: 3%;
-      color: $gray-1;
+  li {
+    display: inline-block;
+    font-size: 0.9vw;
+    margin-right: 1vw;
+    color: $gray-1;
+    font-family: Arial;
+
+    @include screen-mobile {
+      font-size: 3.8vw;
+      margin-right: 5vw;
+
+      &:last-child {
+        margin-right: 2vw;
+      }
     }
+  }
 
-    img {
-      padding: 1%;
-      margin-left: 4%;
-      padding-top: 5%;
+  #logo {
+    margin-right: 5vw;
+  }
+
+  .logo-text {
+    color: $black;
+
+    @include screen-mobile {
+      display: none;
     }
+  }
 
-    #logo-text {
-      padding-right: 15%;
-      color: $black;
+  .icon-ic-pineapple {
+    position: relative;
+    top: 0.3vw;
+    margin-right: 0.5vw;
+    font-size: $font-2-2vw;
+
+    @include screen-mobile {
+      top: 2.2vw;
+      left: -21vw;
+      font-size: 10vw;
     }
   }
 }
 
-.subscription {
-  padding: 20%;
-  padding-top: 31%;
-  padding-bottom: 0;
+.newsletter {
+  position: relative;
+  top: 16.2vw;
+  left: 20%;
+}
+
+.subscription-text-container {
+  width: 60%;
 
   h1 {
     font-family: Georgia;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.85vw;
+    font-weight: 400;
+    letter-spacing: 0.08vw;
+    padding-bottom: 0.2vw;
   }
 
   p {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9vw;
     color: $gray-1;
+    font-family: Arial;
+    line-height: 1.2vw;
   }
 }
 
-.email-input {
-  position: relative;
-  width: 97%;
-  margin-left: 15%;
-  margin-top: 6%;
-  height: 6%;
-  z-index: 998;zoom: 1.5;;
-  border: 0;
-  border-left: 0.3vw solid $blue-1;
-  padding-left: 1.8vw;
-  font-size: 0.6vw;
-}
-
-.terms-of-service {
-  margin-top: 7%;
-  margin-left: 21.5%;
-}
-
-input[type="checkbox" i] {
-  width: 1.5vw;
-  height: 1.5vw;
-  -moz-appearance: none;
-}
-
-label {
-  padding-left: 2%;
-  font-family: Arial;
-  color: $gray-1;
-  font-size: 0.9vw;
-
-  span {
-    text-decoration: underline;
-    color: $black;
+.email-container {
+  input {
+    width: 110%;
   }
-}
-
-.icon-ic_arrow:before {
-  position: relative;
-  z-index: 999;
-  margin-left: 105%;
-}
-
-.icon-ic_arrow {
-  position: absolute;
-  top: 29.2vw;
-  left: 34.6vw;
-  color: $gray-2;
-  font-size: 1vw;
-}
-
-.icon-ic-pineapple:before {
-  font-size: 2vw;
-  padding-right: 2%;
-  margin-left: 4%;
-}
-
-.icon-ic-youtube:before {
-  border: 1px solid $gray-1;
-  border-radius: 50%;
-}
-
-.icon-ic_twitter:before {
-  border: 1px solid $gray-1;
-  border-radius: 50%;
-}
-
-.icon-ic-instagram:before {
-  border: 1px solid $gray-1;
-  border-radius: 50%;
-}
-
-.icon-ic_facebook:before {
-  border: 3px solid $gray-1;
-  border-radius: 50%;
-  padding: 1%;
-  padding-right: 2%;
-  padding-left: 2%;
-}
-
-.social-icons {
-  text-align: center;
 }

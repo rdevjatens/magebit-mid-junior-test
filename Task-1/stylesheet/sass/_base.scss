@@ -8,4 +8,27 @@ $white: #FFFFFF;
 $black: #000000;
 
 /* Fonts */
-$font-1vw: 1vw;
+$font-2-2vw: 2.2vw;
+
+/* screen size */
+$screen-mobile: 375px;
+$screen-desktop: 376px;
+
+/* mixins */
+@mixin remove-space {
+  margin: 0;
+  padding: 0;
+}
+
+/* screen sizes */
+@mixin screen-mobile {
+  @media only screen and (max-width: $screen-mobile) {
+    @content
+  }
+};
+
+@mixin screen-desktop {
+  @media only screen and (min-width: $screen-desktop) {
+    @content
+  }
+}
